@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #b9e1e8;
+            font-family: 'Times New Roman', Times, serif;
+            }
+        .round {
+            border-radius: 10px 100px / 120px;
+            width: 450px;
+            height: 450px;
+            object-fit:cover;
+            cursor: pointer;
+        }
+        .shadow-box { 
+        } 
+        .shadow-box:hover { 
+            border-radius: 10px 100px / 120px;
+            width: 450px;
+            height: 450px;
+            object-fit:cover;
+            cursor: pointer;
+            margin: 50px auto; 
+            transition: box-shadow 0.3s ease-in-out; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+        }
+        .reveal { 
+            opacity: 0; 
+            transition: opacity 1s ease-in-out;
+        } 
+        .reveal.reveal-active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <!-- BootstrapMy portfolio -->
+        </a>
+    </nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="img1.jpg" width="30" height="30" class="d-inline-block align-top navbar-brand" alt="">
+            <a class="navbar-brand" href="#">GALE Kodzo George</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-start">
+                    <h1 class="display-4"><strong>GALE Kodzo George</strong></h1>
+                    <p class="lead">Étudiant à IAI-TOGO | Programmation web et mobile</p>
+                    <div class="social-icons mt-3">
+                        <a href="https://www.linkedin.com/in/kodzo-george-gale-7907a32a2" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:georgegale825@gmail.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                                <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                                <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/code2george" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end align-items-center shadow-box">
+                    <img src="img1.jpg" alt="ma photo" class="round mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+
+    <!-- Acceuil section -->
+    <section id="accueil" class="py-4 text-center">
+        <h1 class="display-4">Bienvenue sur mon Portfolio</h1>
+        <p class="lead">Passionné(e) par les technologies modernes, je conçois et développe des solutions innovantes qui répondent aux besoins numériques d'aujourd'hui.
+
+            Grâce à mon parcours académique et mes expériences pratiques, j'ai acquis des compétences solides dans la création d'applications web et mobiles performantes, ergonomiques et adaptées aux attentes des utilisateurs. Mon objectif est de transformer les idées en produits numériques concrets et de contribuer à un monde plus connecté et interactif.
+            
+            Je vous invite à explorer mon portfolio, qui met en avant mes projets et ma vision pour l'avenir dans le domaine du développement web et mobile.
+            
+            Bonne visite !</p>
+    </section>
+
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Compétences</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Langages de Programmation</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li> 
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                    <!-- <div class="col-md-6">
+                        <div class="progress col-md-6" style="height: 9px;">
+                            <div class="progress-bar" role="progressbar" style="width: 90px" aria value="90"></div>
+                        </div>
+                        <div class="progress col-md-6" style="height: 9px;">
+                            <div class="progress-bar" role="progressbar" style="width: 90px" aria value="90"></div>
+                        </div>
+                        <div class="progress col-md-6" style="height: 9px;">
+                            <div class="progress-bar" role="progressbar" style="width: 90px" aria value="90"></div>
+                        </div>
+                        <div class="progress col-md-6" style="height: 9px;">
+                            <div class="progress-bar" role="progressbar" style="width: 90px" aria value="90"></div>
+                        </div>
+                        <div class="progress col-md-6" style="height: 9px;">
+                            <div class="progress-bar" role="progressbar" style="width: 90px" aria value="90"></div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="col-md-4">
+                    <h4>Frameworks</h4>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Bases de Données</h4>
+                    <ul>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Mes Projets</h2>
+            <div class="row">
+                <!-- Project 1: E-commerce -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="img2.png" class="card-img-top" alt="E-commerce Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Projet E-commerce</h5>
+                            <p class="card-text">Un site de commerce électronique avec la page de connexion avec HTML et Bootstrap css.</p>
+                            <a href="https://e-commerce-ye7k.onrender.com" class="btn btn-primary">Voir le Projet</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2: Netflix Clone -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="image.png" class="card-img-top" alt="Netflix Clone Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Clone Netflix</h5>
+                            <p class="card-text">Un clone de Netflix avec une interface utilisateur et des fonctionnalités de streaming vidéo plus la page de connexion.</p>
+                            <a href="https://clone-netflix-c6mt.onrender.com" class="btn btn-primary">Voir le Projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">À Propos</h2>
+            <p class="lead text-center">Je suis GALE Kodzo George, étudiant à IAI-TOGO spécialisé en programmation web et mobile. Passionné par le développement et les nouvelles technologies, je suis toujours à la recherche de nouveaux défis.</p>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Contact</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required value="georgegale825@gmail.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 GALE Kodzo George. Tous droits réservés.</p>
+        </div>
+    </footer>
+    </div>
+
+    <script> window.addEventListener('scroll', function() { document.querySelectorAll('.reveal').forEach(function(element) { if (element.getBoundingClientRect().top < window.innerHeight - 100) { element.classList.add('reveal-active'); } }); });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,1 @@
+window.addEventListener('scroll', function() { document.querySelectorAll('.reveal').forEach(function(element) { if (element.getBoundingClientRect().top < window.innerHeight - 100) { element.classList.add('reveal-active'); } }); });
